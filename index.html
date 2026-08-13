@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JDD FILM - portrait photography and moving image.">
+  <title>JDD FILM / Portrait Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,ital,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,800;6..96,900;6..96,400&family=Instrument+Sans:wdth,wght@75..100,400;75..100,500;75..100,600;75..100,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="topbar"><a class="wordmark" href="#top">JDD<span>FILM</span></a><p>PORTRAITS / TAIPEI / 2026</p><div class="top-actions"><button id="sound-button" aria-pressed="false">SOUND <i>OFF</i></button><button id="menu-button" aria-expanded="false">MENU <i>+</i></button></div></header>
+  <nav id="menu"><a href="#archive">ARCHIVE</a><a href="#about">STUDIO</a><a href="#booking">BOOK</a><a href="https://www.instagram.com/jdd_film/" target="_blank" rel="noreferrer">INSTAGRAM</a></nav>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-gaze" aria-hidden="true"><img src="assets/images/veil-02.png" alt=""></div><div class="hero-vignette" aria-hidden="true"></div><p class="hero-code">NO. 001<br>THE GAZE<br>JDD FILM</p>
+      <h1>FEEL<br>THE<br><em>FRAME.</em></h1>
+      <div class="hero-photo"><img src="assets/images/veil-01.png" alt="Editorial portrait by JDD FILM"><span>EDITORIAL<br>IMAGE MAKING</span></div>
+      <a href="#archive" class="hero-action">ENTER THE ARCHIVE <b>DOWN</b></a>
+      <p class="hero-note">A PORTRAIT STUDIO<br>FOR PEOPLE WITH A PULSE.</p>
+    </section>
+    <section class="manifesto"><span>( A )</span><p>Not a pose.<br>A <em>presence.</em></p><span>JDD / 2026</span></section>
+    <section class="archive" id="archive">
+      <div class="archive-head"><p>SELECTED ARCHIVE</p><h2>FOUR<br><em>MOODS.</em></h2><span>DRAG OR SCROLL</span></div>
+      <div class="filmstrip" id="filmstrip" aria-label="Selected photography archive">
+        <button class="film-card city wide" data-project="city"><img src="assets/images/city-01.png" alt="Golden Hour Girl"><span>01 <i>GOLDEN HOUR GIRL</i></span></button>
+        <button class="film-card city slim" data-project="city"><img src="assets/images/city-04.png" alt="Golden Hour Girl detail"><span>02 <i>CITY DIARY</i></span></button>
+        <button class="film-card veil tall" data-project="veil"><img src="assets/images/veil-01.png" alt="Soft Distortion"><span>03 <i>SOFT DISTORTION</i></span></button>
+        <button class="film-card veil square" data-project="veil"><img src="assets/images/mono-01.png" alt="Soft Distortion monochrome"><span>04 <i>PRIVATE LIGHT</i></span></button>
+        <button class="film-card bath tall" data-project="bath"><img src="assets/images/bath-02.png" alt="After Water portrait"><span>05 <i>AFTER WATER</i></span></button>
+        <button class="film-card apple wide" data-project="apple"><img src="assets/images/apple-03.png" alt="Little Things Glow"><span>06 <i>LITTLE THINGS GLOW</i></span></button>
+        <button class="film-card apple slim" data-project="apple"><img src="assets/images/apple-05.png" alt="Little Things Glow detail"><span>07 <i>COLOR STUDY</i></span></button>
+      </div>
+      <div class="archive-footer"><p>FOUR STORIES / SEVEN GLIMPSES / ONE VISUAL LANGUAGE</p><button id="next-project">NEXT FRAME <b>RIGHT</b></button></div>
+    </section>
+    <section class="statement"><p>PERSONAL PORTRAITURE<br>EDITORIAL / MOTION</p><h2>FOR THE ONES<br>WHO <em>NOTICE.</em></h2><a href="#booking">MAKE AN INQUIRY <span>ARROW</span></a></section>
+    <section class="about" id="about"><p class="side-label">JDD FILM / STUDIO</p><div><p class="micro">THE APPROACH</p><h2>QUIETLY<br><em>UNFORGETTABLE.</em></h2></div><div class="about-copy"><p>Portraits with texture, colour and a little unpredictability.</p><a href="https://www.instagram.com/jdd_film/" target="_blank" rel="noreferrer">FOLLOW @JDD_FILM <b>NE</b></a></div><a class="qr" href="https://www.instagram.com/jdd_film/" target="_blank" rel="noreferrer"><img src="assets/images/instagram-qr.png" alt="JDD FILM Instagram QR code"><span>SCAN TO FOLLOW</span></a></section>
+    <section class="booking" id="booking"><div><p class="micro">YOUR TURN</p><h2>MAKE IT<br><em>REAL.</em></h2></div><form id="booking-form"><label>NAME<input required name="name" placeholder="YOUR NAME"></label><label>EMAIL<input required type="email" name="email" placeholder="YOUR EMAIL"></label><label>SESSION<select name="type"><option>PORTRAIT SESSION</option><option>COUPLE / FRIENDS</option><option>BRAND / EDITORIAL</option><option>MOTION / REELS</option></select></label><label>NOTE<textarea required name="message" rows="3" placeholder="DATE, IDEA, LOCATION..."></textarea></label><button type="submit">SEND REQUEST <span>NE</span></button><p id="form-status" role="status"></p></form></section>
+  </main>
+  <footer><a class="wordmark" href="#top">JDD<span>FILM</span></a><a href="mailto:dingchen0525@gmail.com">dingchen0525@gmail.com</a><a href="https://www.instagram.com/jdd_film/" target="_blank" rel="noreferrer">@JDD_FILM</a><p>2026</p></footer>
+  <dialog id="lightbox"><button class="close" aria-label="Close">CLOSE</button><button class="gallery-nav previous" aria-label="Previous">PREV</button><figure><img id="gallery-image" src="" alt=""><figcaption id="gallery-caption"></figcaption></figure><button class="gallery-nav next" aria-label="Next">NEXT</button></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
